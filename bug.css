@@ -1,0 +1,1 @@
+The CSS code has an unexpected behavior when a pseudo-class selector is used in conjunction with a sibling combinator and the element being targeted has a dynamic class applied via JavaScript.
