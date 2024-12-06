@@ -1,0 +1,28 @@
+/* solution.css */
+
+.container {
+  display: flex;
+}
+
+.element {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  margin: 10px;
+}
+
+.element.active {
+  background-color: lightblue;
+}
+
+.element + .element:hover {
+  background-color: lightgreen; /* This might not work reliably with dynamic class changes*/
+}
+
+/* A more robust solution for dynamic class changes */
+.element:hover ~ .element {
+  background-color: lightgreen;
+}
+
+/* Consider more targeted selectors to avoid potential conflicts */
+/* Alternatively use javascript to toggle classes and then rely solely on classes to define styles*/
